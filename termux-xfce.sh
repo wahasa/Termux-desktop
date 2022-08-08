@@ -2,7 +2,6 @@
 
 # preparation to installing
 
-pkg update && pkg upgrade
 pkg install root-repo x11-repo
 pkg install neofetch
 
