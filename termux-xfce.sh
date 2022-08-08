@@ -22,3 +22,5 @@ echo " "
 echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
 echo " "
 bash desktop-xfce
+
+rm termux-xfce.sh
