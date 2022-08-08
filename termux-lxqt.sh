@@ -2,11 +2,10 @@
 
 # preparation to installing
 
-pkg update && pkg upgrade
+termux-setup-storage
+
 pkg install root-repo x11-repo
 pkg install neofetch
-
-termux-setup-storage
 
 # installing lxqt desktop
 
@@ -22,3 +21,6 @@ clear
 echo " "
 echo "Command to start 'desktop-lxqt' and stop 'desktop-stop'"
 echo " "
+bash desktop-lxqt
+
+rm termux-lxqt.sh
