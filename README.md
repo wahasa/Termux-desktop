@@ -1,12 +1,14 @@
-## Termux Xfce Desktop
+### Termux Desktop on Android
+```
+pkg update && pkg upgrade
+```
 
-## Termux lxqt Desktop
+* Desktop xfce
 
-Desktop xfce
 ```
 pkg update && pkg upgrade && pkg install wget && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh && chmod +x termux-xfce.sh && ./termux-xfce.sh
 ```
 
-Desktop lxqt
+* Desktop lxqt
 
 pkg update && pkg upgrade && pkg install wget && wget ./termux-lxqt.sh
