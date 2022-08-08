@@ -31,7 +31,7 @@ pkg update && pkg upgrade && pkg install wget && wget https://raw.githubusercont
 desktop-xfce
 ```
 
-* Desktop-xfce
+* Desktop-lxqt
 ```
 desktop-lxqt
 ```
