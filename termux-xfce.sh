@@ -2,10 +2,10 @@
 
 # preparation to installing
 
+termux-setup-storage
+
 pkg install root-repo x11-repo
 pkg install neofetch
-
-termux-setup-storage
 
 # installing xfce desktop
 
@@ -21,3 +21,4 @@ clear
 echo " "
 echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
 echo " "
+bash desktop-xfce
