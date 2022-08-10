@@ -5,11 +5,11 @@
 termux-setup-storage
 
 pkg install root-repo x11-repo
-pkg install neofetch
+pkg install neofetch -y
 
 # installing xfce desktop
 
-pkg install xfce4* tigervnc
+pkg install xfce4* tigervnc -y
 echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startxfce4" > $PREFIX/bin/desktop-xfce
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 
