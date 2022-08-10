@@ -5,11 +5,11 @@
 termux-setup-storage
 
 pkg install root-repo x11-repo
-pkg install neofetch
+pkg install neofetch -y
 
 # installing lxqt desktop
 
-pkg install lxqt* tigervnc
+pkg install lxqt* tigervnc -y
 echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startlxqt" > $PREFIX/bin/desktop-lxqt
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 
