@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# preparation to installing
+#preparation to installing
 
 termux-setup-storage
 
 pkg install root-repo x11-repo
 pkg install neofetch -y
 
-# installing xfce desktop
+#installing xfce desktop
 
 pkg install xfce* libxfce* mousepad tigervnc -y
 echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startxfce4" > $PREFIX/bin/desktop-xfce
