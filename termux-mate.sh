@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# preparation to installing
+#preparation to installing
 
 termux-setup-storage
 
 pkg install root-repo x11-repo
 pkg install neofetch -y
 
-# installing mate desktop
+#installing mate desktop
 
 pkg install mate* libmate* caja marco tigervnc -y
 echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/mate-session" > $PREFIX/bin/desktop-mate
