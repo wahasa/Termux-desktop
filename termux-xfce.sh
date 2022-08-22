@@ -12,14 +12,15 @@ pkg install neofetch -y
 pkg install xfce4* tigervnc -y
 echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startxfce4" > $PREFIX/bin/desktop-xfce
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
+
+rm -rf ~/.vnc/xstartup
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
 startxfce4" > ~/.vnc/xstartup
 
-chmod +x ~/.vnc/xstartup
 chmod +x $PREFIX/bin/desktop-xfce
 chmod +x $PREFIX/bin/desktop-stop
-
+chmod +x ~/.vnc/xstartup
 clear
 
 echo " "
