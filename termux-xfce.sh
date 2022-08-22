@@ -14,6 +14,8 @@ echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startxfce4" > $PREFIX/bi
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 
 rm -rf ~/.vnc/xstartup
+
+touch ~/.vnc/xstartup
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
 startxfce4" > ~/.vnc/xstartup
