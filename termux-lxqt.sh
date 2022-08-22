@@ -12,13 +12,15 @@ pkg install neofetch -y
 pkg install lxqt* tigervnc -y
 echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startlxqt" > $PREFIX/bin/desktop-lxqt
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
+
+rm -rf ~/.vnc/xstartup
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
 startlxqt" > ~/.vnc/xstartup
 
-chmod +x ~/.vnc/xstartup
 chmod +x $PREFIX/bin/desktop-lxqt
 chmod +x $PREFIX/bin/desktop-stop
+chmod +x ~/.vnc/xstartup
 
 clear
 
