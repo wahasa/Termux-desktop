@@ -16,12 +16,12 @@ pkg update && pkg upgrade
 1. Install Desktop Termux
 * Desktop-xfce
 ```
-pkg install wget && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh && chmod +x termux-xfce.sh && ./termux-xfce.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh && chmod +x termux-xfce.sh && ./termux-xfce.sh
 ```
 
 * Desktop-lxqt
 ```
-pkg install wget && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh && chmod +x termux-lxqt.sh && ./termux-lxqt.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh && chmod +x termux-lxqt.sh && ./termux-lxqt.sh
 ```
 
 2. Start Desktop
