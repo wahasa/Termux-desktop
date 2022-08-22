@@ -21,7 +21,6 @@ startlxqt" > ~/.vnc/xstartup
 chmod +x $PREFIX/bin/desktop-lxqt
 chmod +x $PREFIX/bin/desktop-stop
 chmod +x ~/.vnc/xstartup
-
 clear
 
 echo " "
