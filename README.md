@@ -17,17 +17,17 @@ Copy and paste this command to Termux :
 > pkg update && pkg upgrade
 
 1. Install Desktop Termux
-* Desktop-xfce
+* [Desktop-xfce](https://youtu.be/28HNp4VJnfY)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh && chmod +x termux-xfce.sh && ./termux-xfce.sh
 ```
 
-* Desktop-lxqt
+* [Desktop-lxqt](https://youtu.be/5FfLtuGc4eU)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh && chmod +x termux-lxqt.sh && ./termux-lxqt.sh
 ```
 * Desktop-mate
-> ?
+> No Recommended
 
 ---
 2. Start Desktop
