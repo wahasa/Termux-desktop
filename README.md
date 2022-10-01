@@ -14,9 +14,7 @@
 
 Copy and paste this command to Termux :
 
-```
-pkg update && pkg upgrade
-```
+> pkg update && pkg upgrade
 
 1. Install Desktop Termux
 * Desktop-xfce
@@ -51,8 +49,7 @@ desktop-lxqt
 desktop-stop
 ```
 
----------
-
+---
 ## VNC Viewer
 
 1. Start VNC Server
