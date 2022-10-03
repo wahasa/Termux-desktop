@@ -25,6 +25,8 @@ chmod +x $PREFIX/bin/desktop-stop
 
 clear
 echo " "
+echo "Vnc Server address will run at 127.0.0.1:5901"
+echo " "
 echo "Command to start 'desktop-mate' and stop 'desktop-stop'"
 echo " "
 rm termux-mate.sh
