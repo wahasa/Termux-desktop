@@ -10,23 +10,22 @@ pkg install neofetch -y
 #installing mate desktop
 
 pkg install mate* libmate* caja marco tigervnc -y
-echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/mate-session" > $PREFIX/bin/desktop-mate
+
+echo "vncserver -geometry 1600x900 -name remote-desktop :1" > $PREFIX/bin/desktop-mate
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 
-chmod +x $PREFIX/bin/desktop-mate
-chmod +x $PREFIX/bin/desktop-stop
-clear
-
-echo " "
-echo "Command to start 'desktop-mate' and stop 'desktop-stop'"
-echo " "
-bash desktop-mate
-
-rm -rf ~/.vnc/xstartup
-
+mkdir ~/.vnc
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
 mate-session" > ~/.vnc/xstartup
-chmod +x ~/.vnc/xstartup
 
+chmod +x ~/.vnc/xstartup
+chmod +x $PREFIX/bin/desktop-mate
+chmod +x $PREFIX/bin/desktop-stop
+
+clear
+echo " "
+echo "Command to start 'desktop-mate' and stop 'desktop-stop'"
+echo " "
 rm termux-mate.sh
+bash desktop-mate
