@@ -10,23 +10,23 @@ pkg install neofetch -y
 #installing xfce desktop
 
 pkg install xfce* libxfce* mousepad tigervnc -y
-echo "vncserver -geometry 1600x900 -xstartup ../usr/bin/startxfce4" > $PREFIX/bin/desktop-xfce
+
+echo "vncserver -geometry 1600x900 -xstartup" > $PREFIX/bin/desktop-xfce
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 
-chmod +x $PREFIX/bin/desktop-xfce
-chmod +x $PREFIX/bin/desktop-stop
-clear
-
-echo " "
-echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
-echo " "
-bash desktop-xfce
-
-rm -rf ~/.vnc/xstartup
-
+mkdir ~/.vnc
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
 startxfce4" > ~/.vnc/xstartup
+
 chmod +x ~/.vnc/xstartup
+chmod +x $PREFIX/bin/desktop-xfce
+chmod +x $PREFIX/bin/desktop-stop
+
+clear
+echo " "
+echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
+echo " "
 
 rm termux-xfce.sh
+bash desktop-xfce
