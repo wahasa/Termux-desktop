@@ -29,5 +29,6 @@ echo "Vnc Server address will run at 127.0.0.1:5901"
 echo " "
 echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
 echo " "
+
 rm termux-xfce.sh
 bash desktop-xfce
