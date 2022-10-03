@@ -17,6 +17,9 @@ echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 mkdir ~/.vnc
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
+xsetroot -solid grey
+x-window-manager &
+export XKL_XMODMAP_DISABLE=1
 mate-session" > ~/.vnc/xstartup
 
 chmod +x ~/.vnc/xstartup
