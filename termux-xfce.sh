@@ -11,7 +11,7 @@ pkg install neofetch -y
 
 pkg install xfce* libxfce* mousepad tigervnc -y
 
-echo "vncserver -geometry 1600x900 -xstartup" > $PREFIX/bin/desktop-xfce
+echo "vncserver -geometry 1600x900 -name remote-desktop :1" > $PREFIX/bin/desktop-xfce
 echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 
 mkdir ~/.vnc
@@ -24,6 +24,8 @@ chmod +x $PREFIX/bin/desktop-xfce
 chmod +x $PREFIX/bin/desktop-stop
 
 clear
+echo " "
+echo "Vnc Server address will run at 127.0.0.1:5901"
 echo " "
 echo "Command to start 'desktop-xfce' and stop 'desktop-stop'"
 echo " "
