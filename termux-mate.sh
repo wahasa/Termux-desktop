@@ -17,9 +17,6 @@ echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
 mkdir ~/.vnc
 echo "#!/bin/bash
 xrdb $HOME/.Xresources
-xsetroot -solid grey
-x-window-manager &
-export XKL_XMODMAP_DISABLE=1
 mate-session" > ~/.vnc/xstartup
 
 chmod +x ~/.vnc/xstartup
@@ -32,5 +29,6 @@ echo "Vnc Server address will run at 127.0.0.1:5901"
 echo " "
 echo "Command to start 'desktop-mate' and stop 'desktop-stop'"
 echo " "
+
 rm termux-mate.sh
 bash desktop-mate
