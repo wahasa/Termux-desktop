@@ -16,7 +16,7 @@ Copy and paste this command to Termux :
 
 > pkg update && pkg upgrade
 
-1. Install Desktop Termux
+1. [Install Desktop Termux](https://github.com/wahasa/Termux-desktop/issues/1)
 * [Desktop-xfce](https://youtu.be/28HNp4VJnfY)
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh && chmod +x termux-xfce.sh && ./termux-xfce.sh
