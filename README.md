@@ -26,7 +26,7 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desk
 ```
 pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh && chmod +x termux-lxqt.sh && ./termux-lxqt.sh
 ```
-* Desktop-mate
+* [Desktop-mate](https://github.com/wahasa/Termux-desktop/issues/1#issuecomment-1275477906)
 > No Recommended
 
 ---
