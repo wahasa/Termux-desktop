@@ -14,79 +14,60 @@
 
 Copy and paste this command to Termux :
 
-> pkg update && pkg upgrade
+> pkg update
 
-1. [Install Desktop Termux](https://github.com/wahasa/Termux-desktop/issues/1)
-* [Desktop-xfce](https://youtu.be/28HNp4VJnfY)
-```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh && chmod +x termux-xfce.sh && ./termux-xfce.sh
-```
+#### Install Desktop Termux
 
-* [Desktop-lxqt](https://youtu.be/5FfLtuGc4eU)
+* Install Desktop-xfce
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh && chmod +x termux-lxqt.sh && ./termux-lxqt.sh
-```
-* [Desktop-mate](https://github.com/wahasa/Termux-desktop/issues/1#issuecomment-1275477906)
-> No Recommended
-
----
-2. Start Desktop
-
-* Desktop-xfce
-```
-desktop-xfce
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-xfce.sh ; chmod +x termux-xfce.sh ; ./termux-xfce.sh
 ```
 
-* Desktop-lxqt
+* Install Desktop-lxqt
 ```
-desktop-lxqt
-```
-
----
-3. Stop Desktop
-
-```
-desktop-stop
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh ; chmod +x termux-lxqt.sh ; ./termux-lxqt.sh
 ```
 
----
+* Start Desktop
+```
+vnc-start
+```
+
+* Stop Desktop
+```
+vnc-stop
+```
+
 ## VNC Viewer
-
-1. Start VNC Server
+* Start VNC Server
 
 run this command on termux :
-* Desktop-xfce
 ```
-desktop-xfce
-```
-
-* Desktop-lxqt
-```
-desktop-lxqt
+vnc-start
 ```
 
----
-2. Open Vnc Viewer
+* Open Vnc Viewer
 
 Add (+) VNC Client to connect, fill with :
 
 Address
-> localhost:1
+```
+localhost:1
+```
 
 Name
-> Termux Desktop
+```
+Termux Desktop
+```
 
 To disconnect VNC Client, click (X) on the right.
 
----
-3. Stop VNC Server
+* Stop VNC Server
 
-run this command to termux :
-
+run this command to termux
 ```
-desktop-stop
+vnc-stop
 ```
-
 </br>
 
 ---
