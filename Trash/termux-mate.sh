@@ -7,8 +7,8 @@ pkg install neofetch -y
 #installing mate desktop
 pkg install mate* libmate* caja marco tigervnc -y
 
-echo "vncserver -geometry 1600x900 -name remote-desktop :1" > $PREFIX/bin/desktop-mate
-echo "vncserver -kill :1" > $PREFIX/bin/desktop-stop
+echo "vncserver -geometry 1600x900 -name remote-desktop :1" > $PREFIX/bin/vnc-start
+echo "vncserver -kill :1" > $PREFIX/bin/vnc-stop
 
 mkdir ~/.vnc
 echo "#!/bin/bash
