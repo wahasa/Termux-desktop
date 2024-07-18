@@ -28,6 +28,7 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Termux-deskt
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Termux-desktop/main/termux-lxqt.sh ; chmod +x termux-lxqt.sh ; ./termux-lxqt.sh
 ```
 
+---
 * Start Desktop
 ```
 vnc-start
@@ -38,6 +39,11 @@ vnc-start
 vnc-stop
 ```
 
+---
+
+* [Mod Desktop >](https://github.com/wahasa/Termux-desktop/blob/main/Mod-Desktop-Termux.md)
+
+---
 ## VNC Viewer
 * Start VNC Server
 
